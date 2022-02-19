@@ -1,3 +1,21 @@
+<p>&lt;?php </p>
+<p>//get data from form <br />
+  $name = $_POST['name'];<br />
+  $email= $_POST['email'];<br />
+$subject= $_POST['subject'];<br />
+  $message= $_POST['message'];</p>
+<p><br />
+  $to = &quot;amineziadi484@gmail.com&quot;;<br />
+  $subject = &quot;Mail From website&quot;;<br />
+  $txt =&quot;Name = &quot;. $name . &quot;\r\n Email = &quot; . $email . &quot;\r\n Message =&quot; . $message;<br />
+  $headers = &quot;From: noreply@MFashionD.com&quot; . &quot;\r\n&quot; .<br />
+  &quot;CC: somebodyelse@example.com&quot;;</p>
+<p>if($email!=NULL){ <br />
+  mail($to,$subject,$txt,$headers);<br />
+} </p>
+<p>//redirect </p>
+<p>header(&quot;Location:thankyou.html&quot;);</p>
+<p>?&gt;</p>
 <?php
   /**
   * Requires the "PHP Email Form" library
