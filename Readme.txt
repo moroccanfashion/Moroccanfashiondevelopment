@@ -1,6 +1,6 @@
 Thanks for downloading this template!
 
-Template Name: Gp
-Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Template Name: Moroccan Fashion Development.
+Template URL: https://AmineZ.io
+Author: Amine ZIADI
+License: https://AmineZ.io
