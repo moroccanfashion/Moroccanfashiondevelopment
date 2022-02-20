@@ -890,6 +890,19 @@ section {
   .counts .image img {
     max-width: 100%;
   }
+  .count-box{
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .counts p{
+    margin-left: 15px;
+    margin-right: 7px;
+  }
+  .counts h3{
+    margin-left: 15px;
+    margin-right: 7px;
+  }
+
 }
 
 /*--------------------------------------------------------------
