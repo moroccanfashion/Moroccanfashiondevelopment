@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -23,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo{
   width: 350px;
+  left: 48%;
 }
 span{
   color: #008037;
@@ -35,8 +38,10 @@ span{
 .content p{
   font-weight: 600;
 }
+/*--------------------------------------------------------------
+# VIDEO BACKGROUND  
+--------------------------------------------------------------*/
 
-/* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: absolute;
   right: 0;
@@ -88,7 +93,55 @@ z-index: -1;
       text-align: center; 
     }
 }
+/*--------------------------------------------------------------
+# scroll down
+--------------------------------------------------------------*/
+.scroll-dow{
+  height: 50px;
+  width: 25px;
+  border: 2px solid whitesmoke;
+  position: absolute;
+  left: 48%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-dow::before,
+.scroll-dow::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-dow 1s ease-in-out infinite;
+}
+.scroll-dow::before {
+  top: 10%;
+  animation-delay: 0.2s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
 
+@keyframes scroll-dow {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
 
 /*--------------------------------------------------------------
 # Back to top button
