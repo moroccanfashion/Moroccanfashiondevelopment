@@ -232,8 +232,7 @@ z-index: -1;
 }
 
 .pdf{
- align-items: center;
- padding:500px ;
+ text-align: center;
 
 }
 .get-pdf-btn {
@@ -262,15 +261,12 @@ z-index: -1;
 @media only screen and (max-width: 480px) {
     .get-pdf-btn{
       padding: 7px 20px 7px 20px;
-      margin-right: 15px;
+      margin: 20px;
     }
     .pdf{
-      align-items: center;
-      padding:50px;
+      text-align: center;
      }
   }
-
-
 
 
 /*--------------------------------------------------------------
